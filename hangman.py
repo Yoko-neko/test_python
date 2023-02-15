@@ -1,3 +1,5 @@
+# It doesn't seem to load the words in the list. I can't play games.
+
 import random
 import time
 
