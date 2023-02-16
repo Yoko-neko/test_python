@@ -1,0 +1,2 @@
+$user_nameさん。今日は何を食べてしまったのですか？
+$user_name, what did you eat today?

@@ -1,0 +1,5 @@
+今日は$food_name　を食べましたか？
+Did you eat $fuud_name　today?
+
+あなたはその食べ物が好きですか？ [Yes/No]
+Do you like it? [y/n]
