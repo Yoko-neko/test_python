@@ -1,6 +1,3 @@
-そうでしたか。。。$user_nameさん。大丈夫！問題ありません。それはゼロカロリーです。なぜなら$reason_d.items(a)です。
-Oh really. $user_name,it's okay! No problem. It as zero calories. because $reason_d.items(b)
+そうでしたか。。。$user_nameさん。大丈夫！問題ありません。それはゼロカロリーです。なぜなら$reason_list[reason_num][0]です。
+Oh really. $user_name,it's okay! No problem. It as zero calories. because $reason_list[reason_num][1].
 
-メモ
-reason_list.pyのリストとこのファイルの変数をくっつけて読み込めるようにする
-明日はここから。

@@ -1,4 +1,6 @@
 """Defined a robot model """
+import random
+
 from guilt_elimination_app.models import ranking
 from guilt_elimination_app.views import console
 
@@ -74,13 +76,28 @@ class GuiltEliminationRobot(Robot):
         while True:
             template = console.get_template(
                 'question.txt', self.speak_color)
-            food = input(template.substitute({
+            food_name = input(template.substitute({
                 'robot_name': self.name,
                 'user_name': self.user_name,
             }))
-            if food:
-                self.ranking_model.increment(food)
+            if food_name:
+                self.ranking_model.increment(food_name)
                 break
+
+
+    def encourage_with_reason(self):
+        while True:
+            template = console.get_template(
+                'words_of_encouragement.txt', self.speak_color)
+            reason_list = console.get_template(
+                'reason_list.py', self.speak_color )
+            reason_num = random.randint(0,3)
+            print(template.substitute({
+                'user_name': self.user_name,
+                'reason_list': self.reason_list(reason_num)
+            }))
+
+
 
     @_hello_decorator
     def thank_you(self):
