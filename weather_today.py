@@ -6,7 +6,7 @@ import requests
 # Pythonで扱うためGUIライブラリで,
 # Tk()関数を使用することで、メインウィンドウを作成することができる
 
-# お天気APIを取得するためにimport requestsしたけど、要らないかも？
+# お天気APIを取得するためにimport requestsしたけど、要らない？
 # requests普通に出るし、エラーの波線出てこない
 # requests
 
@@ -32,7 +32,7 @@ def getWeather(canvas):
     final_info = weather + "\n" + str(temp) + "°C"
     final_data = "\n"+ "最低気温: " + str(min_temp) + "°C" + "\n" + "最高気温: " + str(max_temp) + "°C"
     label1.config(text = final_info)
-    label2.config(text = final_info)
+    label2.config(text = final_data)
 
 # テキストボックス作成
 textField = tk.Entry(canvas, justify='center', width = 20, font = b)
@@ -45,3 +45,37 @@ label1 = tk.Label(canvas, font=b)
 label1.pack()
 label2 = tk.Label(canvas, font=a)
 label2.pack()
+
+canvas.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
