@@ -4,7 +4,7 @@ import time
 from Pillow import Image
 
 location1 = input("まず最初に訪れたい所を入力してクダさい：")
-location2 = input(not "{}から歩いて行きたい場所を入力してください：".format(location1))
+location2 = input("{}から歩いて行きたい場所を入力してください：".format(location1))
 
 api_key = "your_api_key"
 gmaps = googlemaps.Client(api_key)
